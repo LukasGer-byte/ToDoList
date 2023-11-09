@@ -17,15 +17,13 @@ public class Main {
 
         String menu = "";
         TodoList todoList = new TodoList();
+        Scanner input = new Scanner(System.in);
 
-        try {
-            Scanner input = new Scanner(System.in);
+        do {
             MainMenu();
+            menu = input.nextLine();
 
-            while (!menu.equals("5")) {
-                String menuChoice = input.nextLine();
-
-                switch (menuChoice) {
+                switch (menu) {
                     case "1" -> {
                         System.out.println("1");
                         todoList.showTasks();
@@ -46,13 +44,8 @@ public class Main {
                     }
                     default -> System.out.println(">> Incorrect Choice: Please Enter a Number from above.");
                 }
-            }
 
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            System.out.println(e.getStackTrace());
-        }
-
+        } while (!menu.equals("3"));
     }
 
 }

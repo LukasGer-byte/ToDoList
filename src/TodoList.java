@@ -7,7 +7,7 @@ public class TodoList {
     Scanner scanner = new Scanner(System.in);
 
     public void addTask() {
-        while (true) {
+        for (;;) {
             System.out.println("option 2: Add a Task.");
             System.out.print("Enter the task title: ");
             String title = scanner.nextLine();
