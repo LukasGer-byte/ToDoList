@@ -45,7 +45,7 @@ public class Main {
                     default -> System.out.println(">> Incorrect Choice: Please Enter a Number from above.");
                 }
 
-        } while (!menu.equals("3"));
+        } while (!menu.equals("5"));
     }
 
 }
